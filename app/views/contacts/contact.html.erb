@@ -1,45 +1,62 @@
-
 <div class="container-contact100">
   <div class="wrap-contact100">
-    <form class="contact100-form validate-form">
-				<span class="contact100-form-title">
+    <!--    <form class="contact100-form validate-form", action="/contacts/create">-->
+    <%= form_tag contacts_path, :class => 'contact100-form validate-form', method: 'post' do %>
+      <% if @contact.errors.any? %>
+        <div id="error_explanation">
+          <ul>
+            <% @contact.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+      <!--      <input name="authenticity_token"-->
+      <!--             type="hidden"-->
+      <!--             value="<%#= form_authenticity_token %>"/>-->
+      <span class="contact100-form-title">
 					Send Us A Message
 				</span>
 
       <label class="label-input100" for="first-name">Tell us your name *</label>
       <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
-        <input id="first-name" class="input100" type="text" name="first-name" placeholder="First name">
+        <!--        <input id="first-name" class="input100" type="text" name="first-name" placeholder="First name">-->
+        <%= text_field_tag 'first_name', @contact.first_name, class: 'input100', placeholder: 'First name' %>
         <span class="focus-input100"></span>
       </div>
       <div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
-        <input class="input100" type="text" name="last-name" placeholder="Last name">
+        <!--        <input class="input100" type="text" name="last-name" placeholder="Last name">-->
+        <%= text_field_tag 'last_name', @contact.last_name, class: 'input100', placeholder: 'Last name' %>
         <span class="focus-input100"></span>
       </div>
 
       <label class="label-input100" for="email">Enter your email *</label>
-      <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-        <input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
+      <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+        <!--        <input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">-->
+        <%= text_field_tag 'email', @contact.email, class: 'input100', placeholder: 'Eg. example@email.com' %>
         <span class="focus-input100"></span>
       </div>
 
       <label class="label-input100" for="phone">Enter phone number</label>
       <div class="wrap-input100">
-        <input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +1 800 000000">
+        <!--        <input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +1 800 000000">-->
+        <%= text_field_tag 'phone_number', @contact.phone_number, class: 'input100', placeholder: 'Eg. +1 800 000000' %>
         <span class="focus-input100"></span>
       </div>
 
       <label class="label-input100" for="message">Message *</label>
-      <div class="wrap-input100 validate-input" data-validate = "Message is required">
-        <textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
+      <div class="wrap-input100 validate-input" data-validate="Message is required">
+        <!--        <textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>-->
+        <%= text_area_tag 'message', @contact.message, class: 'input100', placeholder: 'Write us a message' %>
         <span class="focus-input100"></span>
       </div>
-
       <div class="container-contact100-form-btn">
         <button class="contact100-form-btn">
           Send Message
         </button>
       </div>
-    </form>
+    <% end %>
+    <!--    </form>-->
 
     <div class="contact100-more flex-col-c-m" style="background-image: url('ContactFrom_v17/images/bg-01.jpg');">
       <div class="flex-w size1 p-b-47">

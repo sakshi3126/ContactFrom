@@ -12,6 +12,16 @@
         dropdownParent: $('#dropDownSelect1')
     });
 </script>
+<script>
+    function submitFrmAjax(){
+        $.ajax({
+            //Your ajax code here to submit from via AJAX. refer jquery site . I gave sample eg.
+            url: "/create",
+            type: "POST",
+            data: $("form").serialize()
+        });
+    }
+</script>
 <!--===============================================================================================-->
 <script src="ContactFrom_v17/vendor/daterangepicker/moment.min.js"></script>
 <script src="ContactFrom_v17/vendor/daterangepicker/daterangepicker.js"></script>
