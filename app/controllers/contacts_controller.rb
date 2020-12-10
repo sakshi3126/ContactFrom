@@ -12,9 +12,10 @@ class ContactsController < ApplicationController
                            message: params[:message])
     if @contact.valid?
       @contact.save
+      ContactMailer.contact_email(@contact).deliver_now!
       redirect_to root_path
     else
-      render partial: 'errors/not_found'
+      render json: {error: @contact.errors}, status: 422
     end
   end
 

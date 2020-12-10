@@ -15,7 +15,12 @@ module ContactForm
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
     #
+    config.action_mailer.default_url_options = { :host => "localhost:3000" }
     # To show custom error code
     config.exceptions_app = self.routes
+    config.autoload_paths += Dir["#{Rails.root}/lib"]
+    config.i18n.load_path += Dir["#{Rails.root.to_s}/config/locales/**/**/*.{rb,yml}"]
+    I18n.available_locales = [:en, :ru]
+    I18n.default_locale = :en
   end
 end

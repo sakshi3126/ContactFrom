@@ -1,0 +1,41 @@
+en:
+  activerecord:
+    models:
+      contact:
+        one: 'Contact'
+        other: 'Contacts'
+    attributes:
+      contact:
+        firs_name: "First name"
+        last_name: "Last name"
+        email: "Email"
+        phone_number: "Phone Number"
+        message: "Message"
+  label:
+    send_us_message: "Send Us A Message"
+    tell_us_your_name: "Tell us your name *"
+    enter_your_email: "Enter your email *"
+    enter_phone_number: "Enter phone number"
+    message: "Message *"
+    address: "Address"
+    address_details: "Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US"
+    lets_talk: "Lets Talk"
+    contact_number: "+1 800 1236879"
+    general_support: "General Support"
+    contact_email: "contact@example.com"
+  placeholder:
+    firs_name: "First name"
+    last_name: "Last name"
+    email_example: "Eg. example@email.com"
+    phone_example: "Eg. +1 800 000000"
+    message_info: "Write us a message"
+  button:
+    send_message: "Send Message"
+  warning_message:
+    phone_error: "Only positive number without spaces are allowed"
+    type_first_name: "Type first name"
+    type_last_name: "Type last name"
+    valid_email: "Valid email is required: ex@abc.xyz"
+    type_valid_number: "Type Valid Phone Number"
+    message_requirement: "Message is required"
+

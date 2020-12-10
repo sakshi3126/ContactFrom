@@ -54,3 +54,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # the below gem is added for debugging purpose
 gem 'pry', '~> 0.13.1'
+# gem using for internationalization
+gem 'rails-i18n'

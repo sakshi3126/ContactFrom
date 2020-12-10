@@ -1,0 +1,40 @@
+ru:
+  activerecord:
+    models:
+      contact:
+        one: 'Связаться с нами'
+        other: 'Контакты'
+    attributes:
+      contact:
+        firs_name: "Имя"
+        last_name: "Фамилия"
+        email: "Электронное письмо"
+        phone_number: "Телефонный номер"
+        message: "Сообщение"
+  label:
+    send_us_message: "Отправьте нам сообщение"
+    tell_us_your_name: "Сообщите нам свое имя *"
+    enter_your_email: "Введите адрес электронной почты *"
+    enter_phone_number: "Введите номер телефона"
+    message: "Сообщение *"
+    address: "Адрес"
+    address_details: "Mada Center 8-й этаж, 379 Hudson St, New York, NY 10018 US"
+    lets_talk: "Давай поговорим"
+    contact_number: "+1 800 1236879"
+    general_support: "Общая поддержка"
+    contact_email: "contact@example.com"
+  placeholder:
+    firs_name: "Имя"
+    last_name: "Фамилия"
+    email_example: "Например. example@email.com"
+    phone_example: "Например. +1 800 000000"
+    message_info: "Напишите нам сообщение"
+  button:
+    send_message: "Отправить сообщение"
+  warning_message:
+    phone_error: "Допускаются только положительные числа без пробелов"
+    type_first_name: "Введите имя"
+    type_last_name: "Введите фамилию"
+    valid_email: "Требуется действующий адрес электронной почты: ex@abc.xyz"
+    type_valid_number: "Введите действительный номер телефона"
+    message_requirement: "Сообщение обязательно"
