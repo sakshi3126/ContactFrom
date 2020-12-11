@@ -18,3 +18,4 @@
 5. RSpec testing framework is used for testing behaviour of the Application.
 6. Used Trnsifex and Google translator to translate the text. Link Provided below <br> 
    https://www.transifex.com/bulk-mro/contactform-2/enyml/
+7. Code Coverage folder added.
