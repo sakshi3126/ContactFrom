@@ -13,7 +13,7 @@
 ### Features: -
 1. Contact Form Saved to database successfully.
 2. Mail functionality Added after data gets saved to Contact table.
-3. Support for two languages i.e English and Russian has been add to root page by providing options for selections of language.
+3. Support for two languages i.e English and Russian has been add to page by providing options for selections of language.
 4. Validation Handled.
 5. RSpec testing framework is used for testing behaviour of the Application.
 6. Used Trnsifex and Google translator to translate the text. Link Provided below <br> 
