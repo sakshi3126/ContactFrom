@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
 </head>
 <body>
-<h2>Form Submitted Successfully</h2>
+<h4><%= I18n.t('contact_mailer.contact_email.heading') %></h4>
 <p>
-  <%= @contact.full_name %> have successfully Submitted the Contact Form.
+  <%= @contact.full_name %> <%= I18n.t('contact_mailer.contact_email.content') %>
 </p>
 <p>
-  Email ID: <%= @contact.email %>
+  <%= I18n.t('contact_mailer.contact_email.email_id') %> <%= @contact.email %>
 </p>
-<p>Thanks You!</p>
+<p><%= I18n.t('contact_mailer.contact_email.thank_you') %></p>
 </body>
 </html>

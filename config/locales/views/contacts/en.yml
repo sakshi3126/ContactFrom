@@ -23,6 +23,7 @@ en:
     contact_number: "+1 800 1236879"
     general_support: "General Support"
     contact_email: "contact@example.com"
+    click_on_link: "Click on Below Link to Switch Language"
   placeholder:
     firs_name: "First name"
     last_name: "Last name"
@@ -38,4 +39,11 @@ en:
     valid_email: "Valid email is required: ex@abc.xyz"
     type_valid_number: "Type Valid Phone Number"
     message_requirement: "Message is required"
+  contact_mailer:
+    contact_email:
+      subject: "Contact form has been submitted."
+      heading: "Form Submitted Successfully"
+      content: "have successfully Submitted the Contact Form"
+      email_id: "Email ID:"
+      thank_you: "Thanks You!"
 

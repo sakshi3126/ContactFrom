@@ -1,7 +1,7 @@
-Form Submitted Successfully
+<%= I18n.t('contact_mailer.contact_email.heading') %>
 ===============================================
 
-<%= @contact.full_name %> have successfully Submitted the Contact Form.
-Email ID: <%= @contact.email %>.
+<%= @contact.full_name %> <%= I18n.t('contact_mailer.contact_email.content') %>
+<%= I18n.t('contact_mailer.contact_email.email_id') %> <%= @contact.email %>.
 
-Thanks You!
+<%= I18n.t('contact_mailer.contact_email.thank_you') %>

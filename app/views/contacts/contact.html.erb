@@ -3,9 +3,9 @@
     <%= form_tag contacts_path, :class => 'contact100-form validate-form', method: 'post' do %>
       <div class="error bg-danger text-white mb-3 px-1 rounded"></div>
       <div class=" contact100-form-title text-center">
-        <h6> Click on Below Link to Switch Language</h6>
+        <h6> <%= t('label.click_on_link') %></h6>
       </div>
-      <span class="contact100-form-title">
+      <span class="contact100-form-title link-color">
         <p><span class="mr-3"><%= link_to 'English', root_path(locale: :en) %></span>
           <span><%= link_to 'Русский', root_path(locale: :ru) %></span></p>
 				</span>

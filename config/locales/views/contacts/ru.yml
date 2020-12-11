@@ -23,6 +23,7 @@ ru:
     contact_number: "+1 800 1236879"
     general_support: "Общая поддержка"
     contact_email: "contact@example.com"
+    click_on_link: "Нажмите ссылку ниже, чтобы переключить язык"
   placeholder:
     firs_name: "Имя"
     last_name: "Фамилия"
@@ -38,3 +39,10 @@ ru:
     valid_email: "Требуется действующий адрес электронной почты: ex@abc.xyz"
     type_valid_number: "Введите действительный номер телефона"
     message_requirement: "Сообщение обязательно"
+  contact_mailer:
+    contact_email:
+      subject: "Форма обратной связи отправлена."
+      heading: "Форма успешно отправлена"
+      content: "успешно отправили контактную форму"
+      email_id: "Электронный идентификатор:"
+      thank_you: "Спасибо вам!"
