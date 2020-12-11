@@ -39,6 +39,7 @@ en:
     valid_email: "Valid email is required: ex@abc.xyz"
     type_valid_number: "Type Valid Phone Number"
     message_requirement: "Message is required"
+    field_is_required: "Поле обязательно для заполнения, нельзя оставлять пустым"
   contact_mailer:
     contact_email:
       subject: "Contact form has been submitted."

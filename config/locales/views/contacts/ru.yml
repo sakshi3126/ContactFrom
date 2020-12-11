@@ -39,6 +39,7 @@ ru:
     valid_email: "Требуется действующий адрес электронной почты: ex@abc.xyz"
     type_valid_number: "Введите действительный номер телефона"
     message_requirement: "Сообщение обязательно"
+    field_is_required: "Field is required, can't leave blank"
   contact_mailer:
     contact_email:
       subject: "Форма обратной связи отправлена."
