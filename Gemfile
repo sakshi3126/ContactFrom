@@ -57,3 +57,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pry', '~> 0.13.1'
 # gem using for internationalization
 gem 'rails-i18n'
+
+# gem for code coverage
+# gem 'simplecov', require: false, group: :test
+gem 'simplecov', require: false, group: :test

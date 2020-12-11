@@ -42,4 +42,8 @@ RSpec.describe Contact, type: :model do
       expect { Contact.create! }.to raise_error(ActiveRecord::RecordInvalid)
     end
   end
+
+  # describe '#first_name' do
+  #   it { is_expected.to validates(:first_name) }
+  # end
 end
